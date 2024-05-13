@@ -4,6 +4,9 @@ export const ES_INDEX_PUBLIC = "licitatii-publice";
 export const ES_INDEX_DIRECT = "achizitii-directe";
 export const ES_INDEX_OFFLINE = "achizitii-offline";
 
+export const ES_INDICES = [ES_INDEX_PUBLIC, ES_INDEX_DIRECT, ES_INDEX_OFFLINE] as const;
+export type ES_INDICES_TYPE = (typeof ES_INDICES)[number];
+
 export type Fields = Record<string, (string | number)[]>;
 
 export const RESULTS_PER_PAGE = 20;

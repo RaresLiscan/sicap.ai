@@ -15,10 +15,12 @@ export const env = createEnv({
     LISTMONK_API_KEY: z.string().min(1),
     LISTMONK_API_URL: z.string().url(),
     LISTMONK_FROM_EMAIL: z.string().email(),
+    API_SERVICES_TOKEN: z.string().min(5),
   },
   runtimeEnv: {
     ES_URL: process.env.ES_URL,
     DATABASE_URL: process.env.DATABASE_URL,
+    API_SERVICES_TOKEN: process.env.API_SERVICES_TOKEN,
     DATABASE_AUTH_TOKEN: process.env.DATABASE_AUTH_TOKEN,
     GOOGLE_ID: process.env.GOOGLE_ID,
     GOOGLE_SECRET: process.env.GOOGLE_SECRET,
