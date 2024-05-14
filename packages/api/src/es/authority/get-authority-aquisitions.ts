@@ -10,7 +10,7 @@ import {
   transformItem,
 } from "../utils";
 
-export async function searchInstitutionAquisitions(
+export async function searchAuthorityAquisitions(
   fiscalCode: string,
   pitId: string,
   searchAfter?: string | null,
@@ -43,7 +43,7 @@ export async function searchInstitutionAquisitions(
   }));
 }
 
-export async function searchInstitutionOffline(
+export async function searchAuthorityOffline(
   fiscalCode: string,
   pitId: string,
   searchAfter: string | null,
@@ -76,7 +76,7 @@ export async function searchInstitutionOffline(
   }));
 }
 
-export async function searchInstitutionLicitatii(
+export async function searchAuthorityLicitatii(
   fiscalCode: string,
   pitId: string,
   searchAfter: string | null,

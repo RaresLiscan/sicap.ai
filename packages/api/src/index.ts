@@ -14,4 +14,4 @@ export * from "./es/achizitii-offline/get-company";
 export * from "./es/get-sitemaps";
 export * from "./es/save-search";
 export * from "./es/pointInTime";
-export * from "./es/institution";
+export * from "./es/authority";
